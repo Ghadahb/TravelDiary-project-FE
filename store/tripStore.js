@@ -15,7 +15,7 @@ class TripStore {
 
   fetchTrips = async () => {
     try {
-        const response = await instance.get("/trips"); 
+        const response = await instance.get("/trip"); 
         // check s
         this.trips = response.data;
         this.isLoading = false;

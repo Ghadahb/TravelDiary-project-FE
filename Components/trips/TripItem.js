@@ -11,11 +11,13 @@ import {
   Stack,
   NativeBaseProvider,
 } from "native-base"
+import tripStore from "../../store/tripStore"
 
 const TripItem = ({ trip, navigation }) => {
   return (
    
       <Stack space={3} alignItems="center">
+        <Text>{trip.name}</Text>
     <Box
       maxW="80"
       rounded="lg"
