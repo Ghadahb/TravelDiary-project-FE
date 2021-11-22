@@ -6,6 +6,10 @@ import RootNavigator from "./Components/navigation";
 import { createStackNavigator } from "@react-navigation/stack";
 import { NativeBaseProvider } from "native-base";
 import { NavigationContainer } from "@react-navigation/native";
+import { ThemeProvider } from "styled-components";
+import Profile from "./Components/user/Profile";
+import Travels from "./Components/trips/TripItem";
+
 
 export default function App() {
   const Stack = createStackNavigator();
@@ -14,7 +18,7 @@ export default function App() {
       <NavigationContainer>
         {/* <Home /> */}
         <RootNavigator />
-        {/* <Signin /> */}
+       
       </NavigationContainer>
     </NativeBaseProvider>
   );

@@ -1,21 +1,25 @@
 import React from 'react'
-import { StyleSheet, Text, View, Button } from 'react-native'
+import { StyleSheet, Text, View } from 'react-native'
+import { Button } from "native-base";
+import Footer from '../footer/Footer';
 
 const Home = ({ navigation }) => {
     return (
         <View>
+            <Footer navigation={navigation}/>
             {/* <Text> Hi </Text> */}
             <Button 
             title="NOMAD"
             color= "#0000ff"
              onPress={() => alert("WELCOME")}/>
 
-             <Button 
+             {/* <Button 
              title="signin"
              onPress={() => navigation.navigate("Signin")}
-             />
+             /> */}
 
         </View>
+        
     )
 }
 

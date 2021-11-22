@@ -74,7 +74,11 @@ const Signup = ({ navigation }) => {
             Forget Password?
           </Link>
         </FormControl>
-        <Button mt="2" colorScheme="indigo" onPress={handleSubmit}>
+        <Button 
+        mt="2" 
+        colorScheme="indigo" 
+        onPress={handleSubmit}
+        backgroundColor="#0000ff">
           Sign up
         </Button>
         <HStack mt="6" justifyContent="center">

@@ -47,7 +47,7 @@ const Signin = ({ navigation }) => {
         fontWeight="medium"
         size="xs"
       >
-        Sign in to continue!
+        You have to sign in to continue.
       </Heading>
 
       <VStack space={3} mt="5">
@@ -63,7 +63,11 @@ const Signin = ({ navigation }) => {
           onChangeText={(password) => setUser({...user, password})}
            />
         </FormControl>
-        <Button mt="2" colorScheme="indigo" onPress={handleSubmit}>
+        <Button 
+        mt="2" 
+        colorScheme="indigo" 
+        onPress={handleSubmit}
+        backgroundColor="#0000ff">
           Sign in
         </Button>
         <HStack mt="6" justifyContent="center">
