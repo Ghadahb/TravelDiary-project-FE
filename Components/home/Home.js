@@ -4,16 +4,11 @@ import { StyleSheet, Text, View, Button } from 'react-native'
 const Home = ({ navigation }) => {
     return (
         <View>
-            {/* <Text> Hi </Text> */}
-            <Button 
-            title="NOMAD"
-            color= "#0000ff"
-             onPress={() => alert("WELCOME")}/>
 
-             <Button 
+             {/* <Button 
              title="signin"
              onPress={() => navigation.navigate("Signin")}
-             />
+             /> */}
 
         </View>
     )
